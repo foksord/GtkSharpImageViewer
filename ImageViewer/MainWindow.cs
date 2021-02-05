@@ -24,7 +24,6 @@ public partial class MainWindow: Gtk.Window
 					if (displayImage != null && displayImage.Pixbuf != null)
 						displayImage.Pixbuf.Dispose ();
                     
-                    displayImage.SetSizeRequest(330, 330);
 					displayImage.Pixbuf = new Gdk.Pixbuf ( fileChooser.Filename);
 				}
 		}
